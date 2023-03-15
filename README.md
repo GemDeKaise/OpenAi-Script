@@ -1,27 +1,26 @@
-# OpenAI Text Completion Tool
+# OpenAI Text Completion Script
 
-This is a Python script that uses the OpenAI API to generate text completions based on prompts copied to the clipboard. It uses the `pyperclip` library to access the clipboard and the `openai` library to interact with the OpenAI API.
+This script uses OpenAI's GPT-3 language model to generate text based on the contents of your clipboard. It monitors the clipboard for changes and automatically generates a response when it detects a new input. 
 
-## Installation
+## Requirements
 
-1. Clone or download this repository to your local machine.
-2. Navigate to the project directory in your terminal or command prompt.
-3. Run `pip install -r requirements.txt` to install the required dependencies.
-4. Set your OpenAI API key and model engine by replacing the values in the `openai.api_key` and `model_engine` variables in the `openai_text_completion.py` file.
-5. Run the script by running `python openai_text_completion.py`.
+Make sure you have the following Python libraries installed:
 
-**Note**: You may need to use `pip3` instead of `pip` if you have multiple Python versions installed on your system.
+- openai
+- pyperclip
 
-## Adding Your OpenAI API Key
+You can install these libraries by running the following command:
 
-To use this tool, you will need to have an OpenAI API key. If you don't have one yet, you can sign up for the OpenAI GPT-3 beta program [here](https://beta.openai.com/signup/).
+```pip install -r requirements.txt```
 
-Once you have your API key, you can add it to the script by replacing the placeholder value `"YOUR_API_KEY"` in the `openai.api_key` variable with your actual API key. Be sure to keep your API key secure and do not share it with others.
+
+Note: If you have multiple Python versions installed on your system, you may need to use `pip3` instead of `pip`.
 
 ## Usage
 
-1. Copy a prompt to your clipboard.
-2. The script will automatically generate a text completion based on the prompt and copy it to your clipboard.
-3. Paste the text completion wherever you need it.
+To use the script, simply run the `open_ai.py` file in your Python environment. The script will automatically start monitoring your clipboard for changes and generating responses based on the input.
 
-To stop the script, simply copy the word "Kinder" to your clipboard.
+To stop the script, simply copy the word "Kinder" to your clipboard and the script will exit.
+
+When prompted, respond with whether the statement is true or false and provide an argument for your answer in approximately 20-30 words.
+
