@@ -3,7 +3,7 @@ import pyperclip
 import time
 
 # Set your OpenAI API key and model engine
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
 model_engine = "text-davinci-002"
 
 # Function to get the clipboard text
